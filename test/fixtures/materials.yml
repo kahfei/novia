@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  description: MyString
+  plant_status: MyString
+  type: 
+  procurement_type: MyString
+  eis_start_date: 2015-05-21
+  setup_costing_date: 2015-05-21
+  setup_purchasing_date: 2015-05-21
+  engineering_release_date: 2015-05-21
+  finalized_purchasing_date: 2015-05-21
+  clp_prl_date: 2015-05-21
+  clp_sdl_date: 2015-05-21
+  work_scheduling: 2015-05-21
+  plant_costing_date: 2015-05-21
+  quality_management_date: 2015-05-21
+
+two:
+  number: MyString
+  description: MyString
+  plant_status: MyString
+  type: 
+  procurement_type: MyString
+  eis_start_date: 2015-05-21
+  setup_costing_date: 2015-05-21
+  setup_purchasing_date: 2015-05-21
+  engineering_release_date: 2015-05-21
+  finalized_purchasing_date: 2015-05-21
+  clp_prl_date: 2015-05-21
+  clp_sdl_date: 2015-05-21
+  work_scheduling: 2015-05-21
+  plant_costing_date: 2015-05-21
+  quality_management_date: 2015-05-21

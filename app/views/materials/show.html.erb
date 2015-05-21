@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @material.number %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @material.description %>
+</p>
+
+<p>
+  <strong>Plant status:</strong>
+  <%= @material.plant_status %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @material.type %>
+</p>
+
+<p>
+  <strong>Procurement type:</strong>
+  <%= @material.procurement_type %>
+</p>
+
+<p>
+  <strong>Eis start date:</strong>
+  <%= @material.eis_start_date %>
+</p>
+
+<p>
+  <strong>Setup costing date:</strong>
+  <%= @material.setup_costing_date %>
+</p>
+
+<p>
+  <strong>Setup purchasing date:</strong>
+  <%= @material.setup_purchasing_date %>
+</p>
+
+<p>
+  <strong>Engineering release date:</strong>
+  <%= @material.engineering_release_date %>
+</p>
+
+<p>
+  <strong>Finalized purchasing date:</strong>
+  <%= @material.finalized_purchasing_date %>
+</p>
+
+<p>
+  <strong>Clp prl date:</strong>
+  <%= @material.clp_prl_date %>
+</p>
+
+<p>
+  <strong>Clp sdl date:</strong>
+  <%= @material.clp_sdl_date %>
+</p>
+
+<p>
+  <strong>Work scheduling:</strong>
+  <%= @material.work_scheduling %>
+</p>
+
+<p>
+  <strong>Plant costing date:</strong>
+  <%= @material.plant_costing_date %>
+</p>
+
+<p>
+  <strong>Quality management date:</strong>
+  <%= @material.quality_management_date %>
+</p>
+
+<%= link_to 'Edit', edit_material_path(@material) %> |
+<%= link_to 'Back', materials_path %>

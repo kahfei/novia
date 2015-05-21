@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Materials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Description</th>
+      <th>Plant status</th>
+      <th>Type</th>
+      <th>Procurement type</th>
+      <th>Eis start date</th>
+      <th>Setup costing date</th>
+      <th>Setup purchasing date</th>
+      <th>Engineering release date</th>
+      <th>Finalized purchasing date</th>
+      <th>Clp prl date</th>
+      <th>Clp sdl date</th>
+      <th>Work scheduling</th>
+      <th>Plant costing date</th>
+      <th>Quality management date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @materials.each do |material| %>
+      <tr>
+        <td><%= material.number %></td>
+        <td><%= material.description %></td>
+        <td><%= material.plant_status %></td>
+        <td><%= material.type %></td>
+        <td><%= material.procurement_type %></td>
+        <td><%= material.eis_start_date %></td>
+        <td><%= material.setup_costing_date %></td>
+        <td><%= material.setup_purchasing_date %></td>
+        <td><%= material.engineering_release_date %></td>
+        <td><%= material.finalized_purchasing_date %></td>
+        <td><%= material.clp_prl_date %></td>
+        <td><%= material.clp_sdl_date %></td>
+        <td><%= material.work_scheduling %></td>
+        <td><%= material.plant_costing_date %></td>
+        <td><%= material.quality_management_date %></td>
+        <td><%= link_to 'Show', material %></td>
+        <td><%= link_to 'Edit', edit_material_path(material) %></td>
+        <td><%= link_to 'Destroy', material, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Material', new_material_path %>
