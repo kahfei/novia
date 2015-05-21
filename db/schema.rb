@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150521012918) do
+ActiveRecord::Schema.define(version: 20150521020339) do
 
   create_table "materials", force: :cascade do |t|
     t.string   "number"
     t.string   "description"
     t.string   "plant_status"
-    t.string   "type"
+    t.string   "material_type"
     t.string   "procurement_type"
     t.date     "eis_start_date"
     t.date     "setup_costing_date"
