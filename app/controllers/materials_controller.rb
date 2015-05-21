@@ -17,6 +17,11 @@ class MaterialsController < ApplicationController
     @material = Material.new
   end
 
+  def import
+    Material.import(params[:file])
+    redirect_to root_url, notice: "Materials imported"
+  end
+  
   # GET /materials/1/edit
   def edit
   end

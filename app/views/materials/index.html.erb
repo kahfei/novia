@@ -1,7 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Materials</h1>
-
+<h3> Import Material </h3>
+<%= form_tag import_materials_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
 <table>
   <thead>
     <tr>
