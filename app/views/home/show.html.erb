@@ -77,9 +77,11 @@
           ] }
     ]
  %>
+
  <%= 
     column_chart @smn_data,  library: { :series => { 2 => { type: "line"}, 3 => { type: "line"} } } 
  %>
+
 
  <h3>Seminifinished, Buy and Normal-series</h3>
  <% @sbn_data =
