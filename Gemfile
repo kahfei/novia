@@ -27,8 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'roo'
 gem 'chartkick'
-gem 'groupdate'
+#gem 'groupdate'
 gem 'active_median'
+gem 'dateslices'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
