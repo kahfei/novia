@@ -4,26 +4,42 @@
  <h3>Seminifinished, Make and Pre-series</h3>
  <%= 
     column_chart ([
-      { name: "average time taken", 
+      { name: "2014", 
         data: [
           ["setup costing",@smp_setup_costing_average],
           ["engineering release",@smp_engineering_release_average],
           ["CLP-PRL, CLP-SDL, Work Scheduling",@smp_log_prod_average],
           ["plant costing", @smp_plant_costing_average],
           ["quality management", @smp_quality_management_average]
-          ] }
+          ] },
+      { name: "2015",
+        data: [
+          ["setup costing", @smp_setup_costing_average_2015],
+          ["engineering release",@smp_engineering_release_average_2015],
+          ["CLP-PRL, CLP-SDL, Work Scheduling",@smp_log_prod_average_2015],
+          ["plant costing", @smp_plant_costing_average_2015],
+          ["quality management", @smp_quality_management_average_2015]
+          ]}
+      
     ])
  %>
 
  <h3>Seminifinished, Make and Normal-series</h3>
  <%= 
     column_chart ([
-      { name: "average time taken", 
+      { name: "2014", 
         data: [
           ["setup costing",@smn_setup_costing_average],
           ["CLP-PRL, CLP-SDL, Work Scheduling",@smn_log_prod_average],
           ["plant costing", @smn_plant_costing_average],
           ["quality management", @smn_quality_management_average]
+          ] },
+    { name: "2015", 
+        data: [
+          ["setup costing",@smn_setup_costing_average_2015],
+          ["CLP-PRL, CLP-SDL, Work Scheduling",@smn_log_prod_average_2015],
+          ["plant costing", @smn_plant_costing_average_2015],
+          ["quality management", @smn_quality_management_average_2015]
           ] }
     ])
  %>
@@ -31,13 +47,21 @@
  <h3>Seminifinished, Buy and Normal-series</h3>
  <%= 
     column_chart ([
-      { name: "average time taken", 
+      { name: "2014", 
         data: [
           ["setup costing",@sbn_setup_costing_average],
           ["setup purchasing",@sbn_setup_purchasing_average],
           ["CLP-PRL, CLP-SDL, Work Scheduling",@sbn_log_prod_average],
           ["plant costing", @sbn_plant_costing_average],
           ["quality management", @sbn_quality_management_average]
+          ] },
+      { name: "2015", 
+        data: [
+          ["setup costing",@sbn_setup_costing_average_2015],
+          ["setup purchasing",@sbn_setup_purchasing_average_2015],
+          ["CLP-PRL, CLP-SDL, Work Scheduling",@sbn_log_prod_average_2015],
+          ["plant costing", @sbn_plant_costing_average_2015],
+          ["quality management", @sbn_quality_management_average_2015]
           ] }
     ])
  %>
@@ -45,7 +69,7 @@
   <h3>Seminifinished, Buy and Pre-series</h3>
  <%= 
     column_chart ([
-      { name: "average time taken", 
+      { name: "2014", 
         data: [
           ["setup costing",@sbp_setup_costing_average],
           ["setup purchasing",@sbp_setup_purchasing_average],
@@ -54,6 +78,16 @@
           ["CLP-PRL, CLP-SDL, Work Scheduling",@sbp_log_prod_average],
           ["plant costing", @sbp_plant_costing_average],
           ["quality management", @sbp_quality_management_average]
+          ] },
+      { name: "2015", 
+        data: [
+          ["setup costing",@sbp_setup_costing_average_2015],
+          ["setup purchasing",@sbp_setup_purchasing_average_2015],
+          ["engineering release", @sbp_engineering_release_average_2015],
+          ["finalized purchasing", @sbp_finalize_purchasing_average_2015],
+          ["CLP-PRL, CLP-SDL, Work Scheduling",@sbp_log_prod_average_2015],
+          ["plant costing", @sbp_plant_costing_average_2015],
+          ["quality management", @sbp_quality_management_average_2015]
           ] }
     ])
  %>
@@ -61,12 +95,19 @@
  <h3>Finished, Make</h3>
  <%= 
     column_chart ([
-      { name: "average time taken", 
+      { name: "2014", 
         data: [
           ["setup costing",@fm_setup_costing_average],
           ["CLP-PRL, CLP-SDL, Work Scheduling",@fm_log_prod_average],
           ["plant costing", @fm_plant_costing_average],
           ["quality management", @fm_quality_management_average]
+          ] },
+      { name: "2015", 
+        data: [
+          ["setup costing",@fm_setup_costing_average_2015],
+          ["CLP-PRL, CLP-SDL, Work Scheduling",@fm_log_prod_average_2015],
+          ["plant costing", @fm_plant_costing_average_2015],
+          ["quality management", @fm_quality_management_average_2015]
           ] }
     ])
  %>
