@@ -10,6 +10,9 @@ class Material < ActiveRecord::Base
     (self.setup_costing_date - self.eis_start_date).to_i
   end
 
+  
+
+
 
   def setup_purchasing_duration
     (self.setup_purchasing_date - self.setup_costing_date).to_i
@@ -52,4 +55,6 @@ class Material < ActiveRecord::Base
   def quality_management_duration
     (self.quality_management_date - self.plant_costing_date).to_i
   end
+
+
 end
