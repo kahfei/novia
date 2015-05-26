@@ -1,6 +1,10 @@
 class HomeController < ApplicationController
   def show
+    @materials_2014 = Material.where("strftime('%Y', eis_start_date)     <= ?", "2014")
+    @materials_2015 = Material.where("strftime('%Y', eis_start_date)     <= ?", "2015")
 
+    @materials_average_2014 = @materials_2014.to_a.sum(&:entire_process_duration).to_f / (@materials_2014.count)
+    @materials_average_2015 = @materials_2015.to_a.sum(&:entire_process_duration).to_f / (@materials_2015.count)
     # 2014 reports
     # semifinished + make + pre
     @semifinished_make_pre_materials = Material.where("engineering_release_date IS NOT Null").where(

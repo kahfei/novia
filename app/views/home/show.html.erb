@@ -17,22 +17,6 @@
           ["CLP-PRL, CLP-SDL, Work Scheduling",@smp_log_prod_average_2015],
           ["plant costing", @smp_plant_costing_average_2015],
           ["quality management", @smp_quality_management_average_2015]
-          ]},
-       { name: "Std dev, 2014",
-        data: [
-          ["setup costing", @smp_setup_costing_stddev],
-          ["engineering release",@smp_engineering_release_stddev],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@smp_log_prod_stddev],
-          ["plant costing",  @smp_plant_costing_stddev],
-          ["quality management", @smp_quality_management_stddev]
-          ]},
-       { name: "Std dev, 2015",
-        data: [
-          ["setup costing", @smp_setup_costing_stddev_2015],
-          ["engineering release",@smp_engineering_release_stddev_2015],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@smp_log_prod_stddev_2015],
-          ["plant costing",  @smp_plant_costing_stddev_2015],
-          ["quality management", @smp_quality_management_stddev_2015]
           ]}
       
     ]
@@ -40,7 +24,7 @@
 
 
  <%= 
-    column_chart @smp_data,  library: { :series => { 2 => { type: "line"}, 3 => { type: "line"} } } 
+    column_chart @smp_data
  %>
 
 
@@ -60,26 +44,12 @@
           ["CLP-PRL, CLP-SDL, Work Scheduling",@smn_log_prod_average_2015],
           ["plant costing", @smn_plant_costing_average_2015],
           ["quality management", @smn_quality_management_average_2015]
-          ] },
-    { name: "Std dev, 2014", 
-        data: [
-          ["setup costing",@smn_setup_costing_stddev],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@smn_log_prod_stddev],
-          ["plant costing", @smn_plant_costing_stddev],
-          ["quality management", @smn_quality_management_stddev]
-          ] },
-     { name: "Std dev, 2015", 
-        data: [
-          ["setup costing",@smn_setup_costing_stddev_2015],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@smn_log_prod_stddev_2015],
-          ["plant costing", @smn_plant_costing_stddev_2015],
-          ["quality management", @smn_quality_management_stddev_2015]
           ] }
     ]
  %>
 
  <%= 
-    column_chart @smn_data,  library: { :series => { 2 => { type: "line"}, 3 => { type: "line"} } } 
+    column_chart @smn_data  
  %>
 
 
@@ -101,29 +71,13 @@
           ["CLP-PRL, CLP-SDL, Work Scheduling",@sbn_log_prod_average_2015],
           ["plant costing", @sbn_plant_costing_average_2015],
           ["quality management", @sbn_quality_management_average_2015]
-          ] },
-      { name: "Std dev, 2014", 
-        data: [
-          ["setup costing",@sbn_setup_costing_stddev],
-          ["setup purchasing",@sbn_setup_purchasing_stddev],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@sbn_log_prod_stddev],
-          ["plant costing", @sbn_plant_costing_stddev],
-          ["quality management", @sbn_quality_management_stddev]
-          ] },
-     { name: "Std dev, 2015", 
-        data: [
-          ["setup costing",@sbn_setup_costing_stddev_2015],
-          ["setup purchasing",@sbn_setup_purchasing_stddev_2015],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@sbn_log_prod_stddev_2015],
-          ["plant costing", @sbn_plant_costing_stddev_2015],
-          ["quality management", @sbn_quality_management_stddev_2015]
           ] }
     ]
 
 
   %>
  <%= 
-    column_chart @sbn_data,  library: { :series => { 2 => { type: "line"}, 3 => { type: "line"} } } 
+    column_chart @sbn_data  
  %>
 
   <h3>Seminifinished, Buy and Pre-series</h3>
@@ -148,32 +102,12 @@
           ["CLP-PRL, CLP-SDL, Work Scheduling",@sbp_log_prod_average_2015],
           ["plant costing", @sbp_plant_costing_average_2015],
           ["quality management", @sbp_quality_management_average_2015]
-          ] },
-       { name: "Std dev, 2014", 
-        data: [
-          ["setup costing",@sbp_setup_costing_stddev],
-          ["setup purchasing",@sbp_setup_purchasing_stddev],
-          ["engineering release", @sbp_engineering_release_stddev],
-          ["finalized purchasing", @sbp_finalize_purchasing_stddev],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@sbp_log_prod_stddev],
-          ["plant costing", @sbp_plant_costing_stddev],
-          ["quality management", @sbp_quality_management_stddev]
-          ] },
-      { name: "Std dev, 2015", 
-        data: [
-          ["setup costing",@sbp_setup_costing_stddev_2015],
-          ["setup purchasing",@sbp_setup_purchasing_stddev_2015],
-          ["engineering release", @sbp_engineering_release_stddev_2015],
-          ["finalized purchasing", @sbp_finalize_purchasing_stddev_2015],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@sbp_log_prod_stddev_2015],
-          ["plant costing", @sbp_plant_costing_stddev_2015],
-          ["quality management", @sbp_quality_management_stddev_2015]
           ] }
     ]
  %>
 
  <%= 
-    column_chart @sbp_data,  library: { :series => { 2 => { type: "line"}, 3 => { type: "line"} } } 
+    column_chart @sbp_data  
  %>
 
  <h3>Finished, Make</h3>
@@ -192,28 +126,22 @@
           ["CLP-PRL, CLP-SDL, Work Scheduling",@fm_log_prod_average_2015],
           ["plant costing", @fm_plant_costing_average_2015],
           ["quality management", @fm_quality_management_average_2015]
-          ] },
-      { name: "Std dev, 2014", 
-        data: [
-          ["setup costing",@fm_setup_costing_stddev],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@fm_log_prod_stddev],
-          ["plant costing", @fm_plant_costing_stddev],
-          ["quality management", @fm_quality_management_stddev]
-          ] },
-      { name: "Std dev, 2015", 
-        data: [
-          ["setup costing",@fm_setup_costing_stddev_2015],
-          ["CLP-PRL, CLP-SDL, Work Scheduling",@fm_log_prod_stddev_2015],
-          ["plant costing", @fm_plant_costing_stddev_2015],
-          ["quality management", @fm_quality_management_stddev_2015]
           ] }
     ]
  %>
  <%= 
-    column_chart @fm_data,  library: { :series => { 2 => { type: "line"}, 3 => { type: "line"} } } 
+    column_chart @fm_data 
  %>
 
+<h2>Notes</h2>
 
+<li>Statistic derived from <%= @materials_2014.count %> records for 2014 </li>
+<li>Statistic derived from <%= @materials_2015.count %> records for 2015 </li>
+
+<li>2014 Average<%= @materials_average_2014 %></li>
+<li>2015 Average<%= @materials_average_2015 %></li>
+<li>2014 median <%= median(@materials_2014.collect(&:entire_process_duration)) %></li>
+<li>2015 median <%= median(@materials_2015.collect(&:entire_process_duration)) %></li>
 
 </div>
 
